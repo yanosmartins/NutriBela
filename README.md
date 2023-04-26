@@ -1,2 +1,2 @@
 # NutriBela
- Projeto da Tabela Nutricional perfeita
+ Projeto da Tabela Nutricional perfeita.
