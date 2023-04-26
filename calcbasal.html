@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/stylecalcbasal.css"/>
+    <link rel="icon" type="imagem/png" href="insumos/icone.png"/>
+    <title>NutriBela</title>
+</head>
+<body>    
+    <main id="container">
+        <div id="mainbox">
+            <h2>Calculadora de gasto calórico</h2>
+            <div id="inputbox">
+                <div class="input-field">
+                    <label for="value">Peso:</label>
+                    <input type="text" placeholder="Kg" name="peso" required id="peso">
+                </div>
+                <div class="input-field">
+                    <label for="value">Altura:</label>
+                    <input type="text" placeholder="cm" name="altura" required id="altura">
+                </div>
+                <div class="input-field">
+                    <label for="value">Idade:</label>
+                    <input type="text" placeholder="anos" name="idade" required id="idade">
+                </div> 
+            </div>
+            <div id="result">
+                <h4>Resultado:</h4>
+                <span id="total">0 calorias</span>
+            </div>
+            <button id="calbtn" type="submit" value="calcular">Calcular</button>
+        </div>
+    </main>    
+</body>
+</html>

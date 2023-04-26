@@ -1,0 +1,9 @@
+NOTAS:
+
+LOGIN:
+-fazer o botão de mostrar ou ocultar senha conforme a vontade do cliente
+-fazer aviso de erro caso senha esteja errada
+-fazer tela de carregamento com "Bem vindo, 'usuario'"
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/stylecadastro.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Cadastre-se!<br>E venha fazer parte da nossa família..</h1>
+            <img src="insumos/animacaologin.svg" class="left-image" alt="Login">
+        </div>
+        <div class="right">
+            <div class="card">
+                <h1>CADASTRO</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Seu nome" required>
+                </div>
+                <div class="textfield">
+                    <label for="usuario">email</label>
+                    <input type="text" name="usuario" placeholder="Seu email pessoal" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha1" placeholder="Senha" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Confirme sua senha</label>
+                    <input type="password" name="senha" id="senha2" placeholder="Repita a senha" required>
+                </div>
+                <div class="showsenha">
+                <input id="btnshow" type="checkbox" onclick="senhaShow()">
+                <label for="senha">Mostrar senhas</label>
+                </div>
+
+                <script type="text/javascript">
+                    function senhaShow(){
+                        var senha= document.getElementById("senha1", "senha2");
+                        if(senha.type=="password"){
+                            senha1.type="text";
+                            senha2.type="text";
+                        }
+                        else{
+                            senha1.type="password";
+                            senha2.type="password";
+                        }
+                    }
+                </script>
+
+                <button class="btn">Cadastrar</button>   
+                <div class="card-links">
+                    <a href="login.html">Já possui Cadastro?</a>
+                    <a href="index.html">Início</a>
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

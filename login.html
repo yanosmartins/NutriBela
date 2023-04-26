@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/stylelogin.css"/>
+    <title>NutriBela: Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça Login<br>E entre para o nosso time</h1>
+            <a href="index.html"><img src="insumos/animacaologin.svg" class="left-image" alt="Login"></a>
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label>Senha</label>
+                    <input type="password" id="senha" placeholder="Senha">
+                </div>
+                <div class="showsenha">
+                    <input id="btnshow" type="checkbox" onclick="senhaShow()">
+                    <label >Mostrar senhas</label>
+                </div>
+
+                <script type="text/javascript">
+                    function senhaShow(){
+                        var senha= document.getElementById("senha");
+                        if(senha.type=="password"){
+                            senha.type="text";
+                        }
+                        else{
+                            senha.type="password";
+                        }
+                    }
+                </script>
+                <button class="btn-login">Login</button>   
+                <div class="card-links">
+                    <a href="cadastro.html">Não possui Cadastro?</a>
+                    <a href="index.html">Esqueci minha senha</a>
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

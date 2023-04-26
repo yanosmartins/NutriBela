@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Criar uma conta</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" placeholder="Seu nome" />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Seu melhor email"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Sua senha"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="passwordconfirmation">Confirme sua senha</label>
+                <input type="password" id="passwordconfirmation" placeholder="Sua senha novamente" />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="showsenha">
+                <input id="btnshow" type="checkbox" onclick="senhaShow()">
+                <label for="senha">Mostrar senhas</label>
+            </div>
+            <button type="submit" class="">Cadastrar</button> 
+
+
+            <script type="text/javascript">
+                function senhaShow(){
+                    var senha= document.getElementById("password", "passwordconfirmation");
+                    if(senha.type=="password"){
+                        password.type="text";
+                        passwordconfirmation.type = "text";
+                    }
+                    else{
+                        password.type="password";
+                        passwordconfirmation.type = "password";
+                    }
+                }
+            </script>
+
+        </form>
+    </div>
+    <script src="/scripts/scriptform.js" ></script>
+    <script src="https://kit.fontawesome.com/e8dae8ab5f.js" crossorigin="anonymous"></script> 
+</body>
+</html>
