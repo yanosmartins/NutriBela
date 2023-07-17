@@ -84,7 +84,6 @@ body *{
     outline: none;
     box-sizing: border-box;
 }
-
 .textfield > label{
     color: #f0ffffde;
     margin-bottom: 10px;
@@ -116,11 +115,11 @@ body *{
 /*comportamento dos links*/
 a:link{
     text-decoration: none;
-    
+        
 }
 a:hover{
     text-decoration: none;
-    color: #992c2c86;
+    color: #FFFFFF;
 }
 a:visited{
     text-decoration: none;

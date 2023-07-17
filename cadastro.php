@@ -1,3 +1,8 @@
+<?php
+include "js/repositorio.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,6 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style/stylecadastro.css" />
     <title>Cadastro</title>
 </head>
@@ -50,29 +56,7 @@
     </div>
 </body>
 </html>
-
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/flot/jquery.flot.cust.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/flot/jquery.flot.resize.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/flot/jquery.flot.time.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/flot/jquery.flot.tooltip.min.js"></script>
-
-<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-
-<!-- Full Calendar -->
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/moment/moment.min.js"></script>
-<!--<script src="/js/plugin/fullcalendar/jquery.fullcalendar.min.js"></script>-->
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/fullcalendar/fullcalendar.js"></script>
-<!--<script src="<?php echo ASSETS_URL; ?>/js/plugin/fullcalendar/locale-all.js"></script>-->
-
-
-<!-- Form to json -->
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/form-to-json/form2js.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/form-to-json/jquery.toObject.js"></script>
-
-
-
+<script src="js/business.js" type="text/javascript"></script>
 <script language="JavaScript" type="text/javascript">
     $(document).ready(function() {
         //EVENTO CONSTANTE
@@ -80,21 +64,19 @@
             let campo = '';
             let campoId = '';
             if (/[0-9\!\#\$\&\*\'\§\|\\_\/\"\<\>\=\^\~\+\?\.\{\}\`\´\\;\@\,\:\]\[\(\)]/g.test(this.value)) {
-                
                 smartAlert("Atenção", `Nome inválido! Use apenas Letras`, "error");
                 // document.getElementById( `${campoId}`).value = '';
                 $("#nome").val("");
                 $("#nome").focus();
-
             };
         })
 
+        $("#email").on("change", function() {
+            var email = $("#email").val();
+            buscaUsuario(email);
+        });
 
-
-    });
-
-
-    function mostraSenha() {
+        function mostraSenha() {
         var senha = document.getElementById("senha1", "senha2");
         if (senha.type == "password") {
             senha1.type = "text";
@@ -104,35 +86,13 @@
             senha2.type = "password";
         }
     }
+
+
+    });
+
+    function buscaUsuario(email) {
+        usuarioBusca(email);
+    }
+
+    
 </script>
-
-// $("#cpf").mask('999.999.999-99', {
-// reverse: true
-// });
-// $("#cpf").mask('999.999.999-99');
-// $("#rg").mask('99.999.999-9');
-// $("#dataNascimento").mask('99/99/9999');
-// $("#dataNascimento").on("change", function() {
-// let data = $("#dataNascimento").val()
-// if (validaData(data) == false) {
-// smartAlert("Atenção", "Data inválida ", "error");
-// $("#idade").val("");
-// document.getElementById('dataNascimento').value = '';
-// $("#dataNascimento").focus();
-// // disableButton();
-// }
-// });
-
-
-
-
-// $("#cpf").on("change", function() {
-// let data = $("#cpf").val()
-// VerificaCPF()
-// ValidaCPF()
-
-// });
-
-// $("#rg").on("change", function() {
-// VerificaRG()
-// });
