@@ -12,6 +12,10 @@ include "js/repositorio.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style/stylecadastro.css" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6699/6699933.png">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>      SWEET ALERT -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless@4/borderless.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <title>Cadastro</title>
 </head>
 
@@ -27,23 +31,23 @@ include "js/repositorio.php";
                 <h1>CADASTRO</h1>
                 <div class="textfield">
                     <label for="usuario">Usuário</label>
-                    <input id= "nome" type="text" name="usuario" placeholder="Seu nome" required>
+                    <input id="nome" type="text" name="usuario" placeholder="Seu nome" required>
                 </div>
                 <div class="textfield">
                     <label for="usuario">Email</label>
-                    <input id= "email" type="text" name="email" placeholder="Seu email pessoal" required>
+                    <input id="email" type="text" name="email" placeholder="Seu email pessoal" required>
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input id= "senha" type="password" id="senha1" placeholder="Senha" required>
+                    <input id="senha" type="password" id="senha1" placeholder="Senha" required>
                 </div>
                 <div class="textfield">
                     <label for="senha">Confirme sua senha</label>
-                    <input id= "senhaConfirma" type="password" name="senha" id="senha2" placeholder="Repita a senha" required>
+                    <input id="senhaConfirma" type="password" name="senha" id="senha2" placeholder="Repita a senha" required>
                 </div>
                 <div class="showsenha">
                     <input id="btnshow" type="checkbox" onclick="mostraSenha()">
-                    <label id= "btnMostraSenha" for="senha">Mostrar senhas</label>
+                    <label id="btnMostraSenha" for="senha">Mostrar senhas</label>
                 </div>
 
                 <button id="btGrava" class="btn">Cadastrar</button>
@@ -55,11 +59,12 @@ include "js/repositorio.php";
         </div>
     </div>
 </body>
+
 </html>
-<script src="js/business.js" type="text/javascript"></script>
+<script src="js/businessCadastro.js" type="text/javascript"></script>
 <script language="JavaScript" type="text/javascript">
-    $(document).ready(function() {
-        //EVENTO CONSTANTE
+    $(document).ready(function() { //EVENTOS CONSTANTE
+
         $("#nome").on("change", function() {
             let campo = '';
             let campoId = '';
@@ -77,15 +82,15 @@ include "js/repositorio.php";
         });
 
         function mostraSenha() {
-        var senha = document.getElementById("senha1", "senha2");
-        if (senha.type == "password") {
-            senha1.type = "text";
-            senha2.type = "text";
-        } else {
-            senha1.type = "password";
-            senha2.type = "password";
+            var senha = document.getElementById("senha1", "senha2");
+            if (senha.type == "password") {
+                senha1.type = "text";
+                senha2.type = "text";
+            } else {
+                senha1.type = "password";
+                senha2.type = "password";
+            }
         }
-    }
 
 
     });
@@ -93,6 +98,4 @@ include "js/repositorio.php";
     function buscaUsuario(email) {
         usuarioBusca(email);
     }
-
-    
 </script>
