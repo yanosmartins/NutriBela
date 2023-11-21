@@ -1,441 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kanit:wght@400;500&family=Noto+Sans:wght@400;700&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Noto+Sans:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
     padding: 0;
     margin: 0%;
-}
-body *{
-    margin: 0;
-    box-sizing: border-box;
-}
-nav{
-    background-color: #514869;
+    background-color: darkslategrey;
+    font-family: 'Noto Sans', sans-serif;
+    /* box-sizing: border-box; */
     overflow: hidden;
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-nav .logo{
-    color: #fff;
-    float: left;
-    display: block;
-    padding: 14px 16px;
-}
-nav a{
-    color: #00ff88;
-    float: right;
-    text-decoration: none;
-    display: block;
-    padding: 14px 16px;
-    text-transform: uppercase;
-    font-weight: 800;
-    align-items: center;
-    letter-spacing: 3px;
-
-}
-nav a:hover{
-    transition: 1.5;
-    background-color: #77ffc8;
-    color: #992c2c86;
-    height: 100%;
 }
 
-
-/*PARTE DO MAIN*/
-
-
-
-
-.main{
-    background-color: #201b2c;
-    height: 100vh;
-}
-.up{
-    width: 100%;
-    height: 50vh;
+.corpo {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    padding-top: 50px;
-}
-.image{
-    margin: 5px;
-    width: 500px;
-    box-sizing: border-box;
-    margin-top: 100px;
-}
-/*
-@media only screen and (max-width:1500px){
-    .card-login{
-        width: 85%;
-    }
-}
-*/
-
-.down{
-    margin-top: 200px;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content:space-around;
-
-}
-
-
-/*font-family: 'Fredoka One', cursive;*/
-.btn-1{
     justify-content: center;
-    height: 80px;
-    background-color: #ffff00;
-    width: 120px;
-    border-radius: 10px;
-}
-.btn-2{
-    width: 120px;
-    border-radius: 10px;
-    height: 80px;
-    background-color: #ff0000;
-}
-.btn-3{
-    width: 120px;
-    border-radius: 10px;
-    height: 80px;
-    background-color: #00ff00;
-}
-.btn-4{
-    width: 120px;
-    border-radius: 10px;
-    height: 80px;
-    background-color: #0000ff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
-*{                  /** # -> id**/  /** . -> class**/
-  /*   margin: 0;
-    padding: 0; /*define as margnes da tela toda do site*/
-/* }
-
-body{
-    font-family: 'Kanit', sans-serif;
-    background-image: url("../insumos/images/nuvens.jpg");
-    background-size: cover;
-    background-size: auto;
-    color: antiquewhite;
-}
-
-header{
-    height: 8vh;
-    background-color: burlywood;
-    border: 3px solid black
-}
-#logo{
-    height: 43px;
-    width: 43px;
-    border: 3px solid black
-}
-nav{
-    padding: 5px;
-    display: flex;
-
-    border: 3px solid black
-}
-ul{
-    display:flex;
-    justify-content: right;
-    list-style-type: none;
-}
-li{
-    padding-left: 3rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nav{
-    display: flex;
-    height: 8vh;
-    background-color: black;
-    position: relative;
-}
-.headbar{
-    height: 42px;
-    border-radius: 10px;
-    margin: auto;
-}
-.logobar{
-    height: 43px;
-    width: 43px;
-    margin-left: -100%;
-}
-ul{
-    display: flex;
-    margin-top: -35px;
-    justify-content: right;
-}
-li{
-  list-style-type: none;  
-  cursor: pointer;
-  padding-left: 2rem;
-  justify-content: right;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fonte{
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-#background{
-
-
-    /*background-image: url("../insumos/images/background.jpg");
+    align-items: center;
     height: 100vh;
-    background-image: linear-gradient(-135deg, #543720, #658715);
-     <img src="insumos/images/sapo.jpg" alt="NutriBela" id="logo"/>
-    background: rgb(0,0,0);*/
-    /*background-image: linear-gradient(175deg,#23AAF2, #111B21);
-    height: 100vh;
-    color: black;
+    width: 100%;
+}
+
+.area-refeicoes {
+    height: 45%;
+    width: 65%;
     display: flex;
-}
-.headbar{
-    height: 20px;
-    font-family: 'Kanit', sans-serif;
-}
-#logohead{
-    width: 80px;
-    height: 80px;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo{
-    width: 200px;
-    height: 200px;
-
-}
-
-.form-group{
-    font-size: 25px;
-    text-align: justify;
-
-}
-
-.tabresp{
-    font-size: 25px;
-    text-align: center;
-}
-
-#title{ 
-    color: red;
-    font-size: 25px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-#opcao{
-    font-size: 25px;
-}
-
-#btncalc{
-    font-size: 40px;
-    border-style: double;
-    border-width: 5px;
-}**/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /**
-  *{
-    margin: 0;
-    padding: 0;
-}
-.background{
-    background-image: linear-gradient(45deg, green, yellow   );
-    height: 100vh;
-    color: antiquewhite;
-    font-family: Verdana, Tahoma, sans-serif;
-    text-align: center;
-}
-.calculadora{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.9);   
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.refeicao {
     border-radius: 15px;
-    padding: 15px;
-    text-align: center;
+    margin: 10px;
+    height: 25vh;
+    width: 30vw;
+    background-color: beige;
+    box-shadow: 0px 10px 40px #00000090;
+    /* display:    flex ; */
+    justify-content: center;
+    align-items: center;
 }
-#res{
-    width: 206px;
-    height: 26px;
-    margin: 5px;
-    font-size: 25px;
-    text-align: right;
-    color: black;
-    background-color: antiquewhite;
-    padding: 2px;
-}
-.fonte{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.txtbranco{
-    color: antiquewhite;
+.titulo-refeicao { 
+    font-family: 'Acme', sans-serif;
+    color: rgb(141, 54, 23);
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.botao{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    border-radius: 4px;
-    margin: 1px;
-    background-color:rgb(31, 31, 31);
-    border: none;
-    color: antiquewhite;
-    
-    cursor: pointer;
-}
-.botao:hover{
-    background-color: black;
-}**/
 
 
 
@@ -461,12 +72,6 @@ li{
 
 
 
-/**          
-
-
-CSS CENTRALIZAR É SÓ FAZER ISOS AI :
-align-items: center;
-justify-content: center;
 
 
 
@@ -477,65 +82,35 @@ justify-content: center;
 
 
 
-        <div id="background">
-        <center><img src="insumos/images/sapo.jpg" alt="NutriBela" id="logo"/></center>
-        <br>
-        <br>
-        <br>
-        <div id="title">
 
-            <center><p class="title">Declare suas informações</p></center>  
-        </div>
-            <div class="form-group fonte"> 
-                    
-                    
-                <br>
-                <form class="form-group ">
-                    <center><div>
-                        <label for="gender">Sexo: </label>
-                        
-                        <select id="gender">
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                        <option value="female">Outros</option>
-                        </select>
-                    </div></center>
 
-                    <center><div >
-                        <label for="age">Sua idade: </label> <input type="number" placeholder="20" id="age"/> <label>anos.</label>
-                    </div></center>
+/* .curso:hover{ */
+    /* height: 30vh; */
+    /* width: 35vw; */
+    /* transition: 0.8s; */
+    /* transform:scale(105%) */
+    /* box-shadow: 0px 20px 60px #00000090; */
+    /* transform: scale(108%); */
+    /* transform: translate(0, -20px); */
+/* } */
 
-                    <center> <div>
-                        <label for="weight">Seu peso: </label> <input type="number" placeholder="75" id="weight" /> <label>kg.</label>
-                    </div></center>
-
-                    <center><div>
-                        <label for="height">Sua altura: </label> <input type="number" placeholder="174" id="height" /> <label>cm.</label>
-                    </div></center>
-                    <center><label for="activity_level">Seu nível de atividade física: </label>
-                        <select id="activity_level">
-                            <option value="1.2">Sedentário</option>
-                            <option value="1.375">Pouca atividade</option>
-                            <option value="1.55">Atividade moderada</option>
-                            <option value="1.725">Atividade intensa</option>
-                            <option value="1.9">Atividade muito intensa</option>
-                        </select></center>
-
-                        <div class="form-group">
-                            <center><button type="submit" id="btncalc">Calcular!</button></center>
-                                </div>
-
-                </form>
-                <center><div><label>...</label></div></center>
-            </div>
-
-            <div class="tabresp">
-
-            </div>
-    <div>
-
-        <script>
-            
-        </script>
-    </div>
-</div>*/
+/* .imagem-cursoIMG { */
+    /* display:flex; */
+    /* justify-items: center; */
+    /* width: 360px; */
+    /* height: 180px; */
+/* } */
+/*  */
+/* .titulo-curso { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background-color: beige; */
+    /* font-size: 30px; */
+    /* font-weight: bolder; */
+/* } */
+/*  */
+/* .imagem-curso { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background-color: beige; */
+/* } */
